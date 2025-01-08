@@ -1,11 +1,10 @@
 
-import { Button } from 'react-bootstrap';
+import Navbar from "../../components/Navbar/Navbar"
 
 const index = () => {
   return (
     <div>
-      Home
-      <Button variant="primary">Primary</Button>
+        <Navbar />
     </div>
   )
 }

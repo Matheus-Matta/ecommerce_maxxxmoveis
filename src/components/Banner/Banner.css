@@ -1,0 +1,11 @@
+.banner-container {
+    display: flex;
+}
+
+.image-wrapper {
+    transition: transform 0.3s ease;
+  }
+  
+  .image-wrapper:hover {
+    transform: scale(1.1);
+  }
