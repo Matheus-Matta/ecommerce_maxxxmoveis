@@ -4,8 +4,15 @@
 
 .image-wrapper {
     transition: transform 0.3s ease;
+    flex: 1; /* Faz com que todas as imagens compartilhem o espaço */
+    padding: 5px; /* Espaçamento entre as imagens */
+  
   }
   
   .image-wrapper:hover {
     transform: scale(0.95);
+  }
+
+  .image-wrapper img {
+    height: auto; /* Mantém a proporção da imagem */
   }
