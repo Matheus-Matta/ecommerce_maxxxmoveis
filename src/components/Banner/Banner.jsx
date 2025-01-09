@@ -10,20 +10,20 @@ const Banner = () => {
 
   /*constante com imagens do banner*/  
   const images = [
-    { id: 1, imgSource: Image1, label: "Image 1" },
-    { id: 2, imgSource: Image2, label: "Image 2" },
-    { id: 3, imgSource: Image3, label: "Image 3" },
-    { id: 4, imgSource: Image4, label: "Image 4" },
-    { id: 5, imgSource: Image5, label: "Image 5" },
+    { id: 1, imgSource: 'https://placehold.co/270x35?font=roboto', label: "Image" },
+    { id: 2, imgSource: 'https://placehold.co/270x35?font=roboto', label: "Image" },
+    { id: 3, imgSource: 'https://placehold.co/270x35?font=roboto', label: "Image" },
+    { id: 4, imgSource: 'https://placehold.co/270x35?font=roboto', label: "Image" },
+    { id: 5, imgSource: 'https://placehold.co/270x35?font=roboto', label: "Image" },
+
   ];
 
   return (
     /*div com os imagens*/  
-    <div className="banner-container d-flex justify-content-around">
-        {/* Map que passa pelas imagens e ás reproduz a partir dos objetos da constante */}
+    <div className="d-flex justify-content-around align-items-center flex-nowrap w-100 overflow-hidden">
       {images.map(({ id, imgSource, label }) => (
-        <div key={id} className="image-wrapper p-1">
-          <Image src='https://placehold.co/270x35?font=roboto' alt={label}  />
+        <div key={id} className="image-wrapper d-flex justify-content-center align-items-center p-1">
+          <Image src={imgSource} alt={label} className="img-fluid" />
         </div>
       ))}
     </div>
