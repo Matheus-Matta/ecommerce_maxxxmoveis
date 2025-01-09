@@ -19,11 +19,11 @@ const Banner = () => {
 
   return (
     /*div com os imagens*/  
-    <div className="banner-container">
+    <div className="banner-container d-flex justify-content-around">
         {/* Map que passa pelas imagens e ás reproduz a partir dos objetos da constante */}
       {images.map(({ id, imgSource, label }) => (
-        <div key={id} className="image-wrapper">
-          <Image src={imgSource} alt={label}  />
+        <div key={id} className="image-wrapper p-1">
+          <Image src='https://placehold.co/270x35?font=roboto' alt={label}  />
         </div>
       ))}
     </div>
